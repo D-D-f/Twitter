@@ -1,0 +1,12 @@
+$primaryColor: rgb(29, 155, 240);
+
+.button {
+  border-radius: 1rem;
+  padding: 0.6rem 4rem;
+  font-size: 1rem;
+  border: none;
+  background-color: $primaryColor;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+}

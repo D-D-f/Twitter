@@ -1,7 +1,12 @@
-import "./App.css";
+import "./App.scss";
+import Inscription from "./pages/Inscription/Inscription";
 
 const App = () => {
-  return <></>;
+  return (
+    <>
+      <Inscription />
+    </>
+  );
 };
 
 export default App;
