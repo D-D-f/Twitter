@@ -1,5 +1,3 @@
-import "./Inscription.scss";
-
 const Inscription = () => {
   return (
     <form action="">

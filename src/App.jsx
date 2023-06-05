@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./App.css";
 import Inscription from "./pages/Inscription/Inscription";
 
 const App = () => {
