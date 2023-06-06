@@ -1,22 +1,4 @@
-.label_inscription {
-  width: 6rem;
-}
-
-.p_inscription {
-  display: flex;
-  height: max-content;
-}
-
-.input_inscription {
-  background-color: inherit;
-  color: white;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid white;
-}
-
 .form_inscription {
-  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
@@ -27,8 +9,15 @@
   height: 70vh;
   padding: 2rem;
   border-radius: 1rem;
+  position: relative;
 }
 
 .form_inscription h2 {
   font-weight: bold;
+}
+
+.close {
+  position: absolute;
+  left: 1em;
+  top: 1em;
 }
