@@ -1,23 +1,34 @@
+import classes from "./Inscription.module.css";
+
 const Inscription = () => {
   return (
-    <form action="">
-      <p>
-        <label className="label_inscription" htmlFor="nameUser">
+    <form className={classes.form_inscription} action="">
+      <h2>Créer votre compte</h2>
+      <p className={classes.p_inscription}>
+        <label className={classes.label_inscription} htmlFor="nameUser">
           Pseudo
         </label>
-        <input className="input_inscription" type="text" name="nameUser" />
+        <input
+          className={classes.input_inscription}
+          type="text"
+          name="nameUser"
+        />
       </p>
-      <p>
-        <label className="label_inscription" htmlFor="email">
+      <p className={classes.p_inscription}>
+        <label className={classes.label_inscription} htmlFor="email">
           Email
         </label>
-        <input className="input_inscription" type="text" name="email" />
+        <input className={classes.input_inscription} type="text" name="email" />
       </p>
-      <p>
-        <label className="label_inscription" htmlFor="password">
+      <p className={classes.p_inscription}>
+        <label className={classes.label_inscription} htmlFor="password">
           Mot de passe
         </label>
-        <input className="input_inscription" type="password" name="password" />
+        <input
+          className={classes.input_inscription}
+          type="password"
+          name="password"
+        />
       </p>
       <button className="button" type="submit">
         {"S'inscrire"}
