@@ -1,13 +1,10 @@
 .form_inscription {
-  color: white;
+  width: 50%;
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   border: 1px solid gray;
-  width: 25rem;
-  height: 70vh;
-  padding: 2rem;
   border-radius: 1rem;
   position: relative;
 }
@@ -20,4 +17,9 @@
   position: absolute;
   left: 1em;
   top: 1em;
+}
+
+.input_inscription {
+  margin-top: 110px;
+  border: 1px solid red;
 }
