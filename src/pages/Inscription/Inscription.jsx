@@ -12,7 +12,6 @@ const Inscription = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       className={classes.form_inscription}
-      action=""
     >
       <CloseIcon className={classes.close} />
       <h2>Créer votre compte</h2>
