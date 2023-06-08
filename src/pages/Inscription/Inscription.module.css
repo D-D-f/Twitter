@@ -1,7 +1,6 @@
 .form_inscription {
   width: 50%;
   height: 50vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid gray;

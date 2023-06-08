@@ -3,17 +3,25 @@ import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
 import Button from "../../styledComponents/Button/Button";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 const Inscription = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
+  const [hidden, setHidden] = useState(false);
 
   return (
     <form
+      style={{ display: `${hidden ? "none" : "flex"}` }}
       onSubmit={handleSubmit(onSubmit)}
       className={classes.form_inscription}
     >
-      <CloseIcon className={classes.close} />
+      <CloseIcon
+        onClick={() => {
+          setHidden(!hidden);
+        }}
+        className={classes.close}
+      />
       <h2>Créer votre compte</h2>
 
       <TextField
