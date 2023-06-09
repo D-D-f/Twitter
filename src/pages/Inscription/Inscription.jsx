@@ -13,7 +13,7 @@ const Inscription = () => {
   } = useForm();
   const onSubmit = (data) => console.log(data);
   const [hidden, setHidden] = useState(false);
-
+  console.log(errors);
   return (
     <form
       style={{ display: `${hidden ? "none" : "flex"}` }}
