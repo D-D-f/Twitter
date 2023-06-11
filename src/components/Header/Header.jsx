@@ -1,6 +1,7 @@
 import { FormControlLabel, Switch } from "@mui/material";
 import { useState } from "react";
 import classes from "./Header.module.css";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Header = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -11,7 +12,9 @@ const Header = () => {
 
   return (
     <header className={classes.header}>
-      <h1>header</h1>
+      <div>
+        <TwitterIcon />
+      </div>
       <FormControlLabel
         control={
           <Switch

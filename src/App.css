@@ -2,3 +2,9 @@
   --primaryColor: rgb(29, 155, 240);
   --colorError: #e0245e;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
