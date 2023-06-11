@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
+body,
+html,
+#root,
+.container {
+  height: 100%;
+}
+
 .dark {
   background-color: #15202b;
+  color: #ffffff;
 }
