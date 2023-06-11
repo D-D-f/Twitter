@@ -1,12 +1,12 @@
 import "./App.css";
-import Header from "./components/Header/Header";
+import Content from "./Content/Content";
+import ThemeContextProvider from "./Context/Theme/ThemeContext";
 
 const App = () => {
   return (
-    <div className="container">
-      <Header />
-      <main></main>
-    </div>
+    <ThemeContextProvider>
+      <Content />
+    </ThemeContextProvider>
   );
 };
 

@@ -1,30 +1,32 @@
 import { FormControlLabel, Switch } from "@mui/material";
-import { useState } from "react";
 import classes from "./Header.module.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { ThemeContext } from "../../Context/Theme/ThemeContext";
+import { useContext } from "react";
 
 const Header = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const { changeTheme, theme } = useContext(ThemeContext);
 
   const handleSwitchChange = () => {
-    setIsChecked(!isChecked);
+    changeTheme(!theme);
   };
 
   return (
     <header className={classes.header}>
       <div>
-        <TwitterIcon />
+        <TwitterIcon className={classes.iconTwitter} />
       </div>
-      <FormControlLabel
-        control={
-          <Switch
-            checked={isChecked}
-            onChange={handleSwitchChange}
-            sx={{ m: 1 }}
-          />
-        }
-        label={isChecked ? "Mode actif" : "Mode inactif"}
-      />
+      <div>
+        <FormControlLabel
+          control={
+            <Switch
+              checked={theme}
+              onChange={handleSwitchChange}
+              sx={{ m: 1 }}
+            />
+          }
+        />
+      </div>
     </header>
   );
 };
