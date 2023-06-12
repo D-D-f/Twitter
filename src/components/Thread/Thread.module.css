@@ -1,0 +1,6 @@
+.thread {
+  height: 97vh;
+  width: 600px;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
