@@ -9,7 +9,7 @@ const Content = () => {
   return (
     <div className={`container ${theme ? "dark" : "light"}`}>
       <Header />
-      <div>
+      <div style={{ height: "100%" }}>
         <Navigation />
       </div>
       <main></main>

@@ -1,6 +1,12 @@
 .nav {
-  height: 100%;
+  height: 97vh;
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  border-right: 1px solid var(--border);
 }
 
 .ul_nav li {
@@ -20,16 +26,23 @@
   font-size: 1.4em;
 }
 
-.ul_nav li {
+.ul_nav .li_dark,
+.ul_nav .li_light {
   padding: 10px;
   width: 200px;
   border-radius: 20px;
   font-weight: bold;
 }
 
+.li_dark:hover {
+  background-color: var(--colorSurVolDark);
+}
+
+.li_light:hover {
+  background-color: var(--colorSurvolLight);
+}
 .ul_nav li:hover {
   cursor: pointer;
-  background-color: var(--colorSurVolDark);
 }
 
 .icon {
@@ -38,4 +51,11 @@
 
 .btn_nav {
   margin-top: 10px;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 1em 5em;
 }

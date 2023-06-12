@@ -1,6 +1,8 @@
 import { FormControlLabel, Switch } from "@mui/material";
 import classes from "./Header.module.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { ThemeContext } from "../../Context/Theme/ThemeContext";
 import { useContext } from "react";
 
@@ -16,8 +18,15 @@ const Header = () => {
       <div>
         <TwitterIcon className={classes.iconTwitter} />
       </div>
-      <div>
+      <div className={classes.theme}>
+        <span>
+          <LightModeIcon />
+        </span>
         <FormControlLabel
+          style={{
+            marginLeft: "0",
+            marginRight: "0",
+          }}
           control={
             <Switch
               checked={theme}
@@ -26,6 +35,9 @@ const Header = () => {
             />
           }
         />
+        <span>
+          <DarkModeIcon />
+        </span>
       </div>
     </header>
   );
