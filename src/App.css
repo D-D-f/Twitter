@@ -39,5 +39,5 @@ html,
 main {
   width: 60vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
