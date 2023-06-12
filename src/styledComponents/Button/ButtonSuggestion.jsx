@@ -9,6 +9,7 @@ const ButtonSuggestion = styled.button`
   border: none;
   cursor: pointer;
   font-weight: bold;
+  margin-top: 20px;
 `;
 
 export default ButtonSuggestion;
