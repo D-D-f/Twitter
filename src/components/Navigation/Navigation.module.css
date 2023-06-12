@@ -1,0 +1,41 @@
+.nav {
+  height: 100%;
+  width: 20%;
+}
+
+.ul_nav li {
+  display: flex;
+  align-items: center;
+}
+
+.ul_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon,
+.ul_nav li {
+  font-size: 1.4em;
+}
+
+.ul_nav li {
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.ul_nav li:hover {
+  cursor: pointer;
+  background-color: var(--colorSurVolDark);
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.btn_nav {
+  margin-top: 10px;
+}

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import Header from "../components/Header/Header";
 import { ThemeContext } from "../Context/Theme/ThemeContext";
+import Navigation from "../components/Navigation/Navigation";
 
 const Content = () => {
   const { theme } = useContext(ThemeContext);
@@ -8,6 +9,9 @@ const Content = () => {
   return (
     <div className={`container ${theme ? "dark" : "light"}`}>
       <Header />
+      <div>
+        <Navigation />
+      </div>
       <main></main>
     </div>
   );
