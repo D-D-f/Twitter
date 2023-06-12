@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const ButtonSuggestion = styled.button`
   background-color: white;
+  width: 300px;
   color: black;
   padding: 0.9rem 5rem;
   border-radius: 20px;
