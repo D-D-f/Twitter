@@ -1,0 +1,5 @@
+.suggestion {
+  height: 97vh;
+  padding: 2em;
+  border-left: 1px solid var(--border);
+}

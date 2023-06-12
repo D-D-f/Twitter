@@ -18,31 +18,31 @@ const Navigation = () => {
       <ul className={classes.ul_nav}>
         <li className={`${theme ? classes.li_dark : classes.li_light}`}>
           <HomeIcon className={classes.icon} />
-          Accueil
+          <span className={classes.txt_li}>Accueil</span>
         </li>
         <li className={`${theme ? classes.li_dark : classes.li_light}`}>
           <SearchIcon className={classes.icon} />
-          Explorer
+          <span className={classes.txt_li}>Explorer</span>
         </li>
         <li className={`${theme ? classes.li_dark : classes.li_light}`}>
           <NotificationsIcon className={classes.icon} />
-          Notifications
+          <span className={classes.txt_li}>Notifications</span>
         </li>
         <li className={`${theme ? classes.li_dark : classes.li_light}`}>
           <MessageIcon className={classes.icon} />
-          Messages
+          <span className={classes.txt_li}>Messages</span>
         </li>
         <li className={`${theme ? classes.li_dark : classes.li_light}`}>
           <ListAltIcon className={classes.icon} />
-          Listes
+          <span className={classes.txt_li}>Listes</span>
         </li>
         <li className={`${theme ? classes.li_dark : classes.li_light}`}>
           <TurnedInNotIcon className={classes.icon} />
-          Signets
+          <span className={classes.txt_li}>Signets</span>
         </li>
         <li className={`${theme ? classes.li_dark : classes.li_light}`}>
           <PersonOutlineIcon className={classes.icon} />
-          Profil
+          <span className={classes.txt_li}>Profil</span>
         </li>
 
         <Button className={classes.btn_nav}>Tweeter</Button>

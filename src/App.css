@@ -22,11 +22,22 @@ body,
 html,
 #root,
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .dark {
   background-color: #15202b;
   color: #ffffff;
+}
+
+main {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
